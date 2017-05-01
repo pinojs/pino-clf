@@ -7,4 +7,4 @@ node_js:
 script:
 - npm run ci || npm test
 after_success:
-  - npm i -g codecov && codecov -t 
+  - npm i -g codecov && codecov -t 129cb7b2-e864-4852-818e-54e065c0b848
