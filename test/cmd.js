@@ -454,7 +454,7 @@ test('-d [1,2,3] -a 4 common', function (t) {
 })
 
 test('redirect custom fd to file', function (t) {
-  var expected = combined + '\n'
+  var expected = combined
   var tmp = path.join(__dirname, 'tmp')
   var out = fs.openSync(tmp, 'w')
   var args = ['-d', '3', 'combined']
@@ -464,7 +464,7 @@ test('redirect custom fd to file', function (t) {
     input: log
   })
 
-  t.is(fs.readFileSync(tmp).toString() + '', expected)
+  t.is(fs.readFileSync(tmp).toString().split('\n')[0] + '\n', expected)
   fs.unlinkSync(tmp)
 
   t.end()
