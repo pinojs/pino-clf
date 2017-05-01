@@ -1,0 +1,11 @@
+  
+    pino-clf [-d] [-k] [-a] type
+
+    type                common | combined (default)
+
+    -d | --dest |       stderr | stdout (default) or Number or Array of Numbers
+    --destination       Specify file descriptor(s) to send log(s) to [access, referral, agent]
+    
+    -a | --ancillary    stderr | stdout or Number. Specify JSON logs fd
+    
+    -k | --keep         true | false (default) Retain transformed logs in ancillary output

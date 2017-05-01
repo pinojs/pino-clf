@@ -1,0 +1,61 @@
+{
+  "name": "pino-clf",
+  "version": "1.0.0",
+  "description": "Transform Pino HTTP logs into Common Log Format",
+  "main": "index.js",
+  "bin": {
+    "pino-clf": "./cmd.js"
+  },
+  "scripts": {
+    "test": "standard && tap -R=spec test/*.js",
+    "cov": "tap --cov test/*.js",
+    "cov-ui": "tap --cov --coverage-report=html test/*.js",
+    "ci": "standard && tap --cov --coverage-report=lcov test/*.js"
+  },
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^7.1.2",
+    "tap": "^6.2.0"
+  },
+  "dependencies": {
+    "fast-json-parse": "^1.0.2",
+    "minimist": "^1.2.0",
+    "pino-http-format": "^1.0.5",
+    "pump": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinojs/pino-clf.git"
+  },
+  "keywords": [
+    "common log format",
+    "common",
+    "log",
+    "format",
+    "clf",
+    "Apache",
+    "NCSA_HTTPd",
+    "NCSA",
+    "NCSA Common Log Format",
+    "Webalizer",
+    "Analog",
+    "Apache Common Log Format",
+    "Apache Common",
+    "Apache Combined",
+    "Pino",
+    "HTTP",
+    "pino-http",
+    "pino",
+    "express",
+    "koa",
+    "hapi",
+    "express-pino-logger",
+    "koa-pino-logger",
+    "hapi-pino"
+  ],
+  "bugs": {
+    "url": "https://github.com/pinojs/pino-clf/issues"
+  },
+  "homepage": "https://github.com/pinojs/pino-clf#readme"
+}
