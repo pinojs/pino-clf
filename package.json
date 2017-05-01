@@ -22,7 +22,8 @@
     "fast-json-parse": "^1.0.2",
     "minimist": "^1.2.0",
     "pino-http-format": "^1.0.5",
-    "pump": "^1.0.2"
+    "pump": "^1.0.2",
+    "through2": "^2.0.3"
   },
   "repository": {
     "type": "git",
