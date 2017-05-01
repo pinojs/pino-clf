@@ -5,6 +5,7 @@ Transform Pino HTTP logs into Common Log Format.
 
 This CLI tool and module is a transform [transport](https://github.com/pinojs/pino/blob/master/docs/transports.md) for the [pino](http://npm.im/logger) which outputs [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format).
 
+![demo](demo.gif)
 
 ## Supports
 
