@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-var format = require('./')
+var toke = require('./')
 var parse = require('fast-json-parse')
-var stdio = require('pino-http-format/stdio')
+var stdio = require('pino-toke/stdio')
 var args = require('minimist')(process.argv.slice(2), {alias: {
   h: ['help'],
   a: ['ancillary'],
@@ -40,7 +40,7 @@ else if (args.a !== undefined) ancillary = stdio(args.a)
 if (args.k) type = {type: type, keep: true}
 
 try {
-  process.stdin.pipe(format(type, destination, ancillary))
+  process.stdin.pipe(toke(type, destination, ancillary))
 } catch (e) {
   console.error(e.message)
   process.exit(1)
