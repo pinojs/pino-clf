@@ -1,6 +1,6 @@
 {
   "name": "pino-clf",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Transform Pino HTTP logs into Common Log Format",
   "main": "index.js",
   "bin": {
