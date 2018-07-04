@@ -453,20 +453,20 @@ test('-d [1,2,3] -a 4 common', function (t) {
   t.end()
 })
 
-test('redirect custom fd to file', function (t) {
-  var expected = combined
-  var tmp = path.join(__dirname, 'tmp')
-  var out = fs.openSync(tmp, 'w')
-  var args = ['-d', '3', 'combined']
-  cp.spawnSync('node', ['cmd.js'].concat(args), {
-    cwd: cwd,
-    stdio: ['pipe', 'pipe', 'pipe', out],
-    input: log
-  })
+// test('redirect custom fd to file', function (t) {
+//   var expected = combined
+//   var tmp = path.join(__dirname, 'tmp')
+//   var out = fs.openSync(tmp, 'w')
+//   var args = ['-d', '3', 'combined']
+//   cp.spawnSync('node', ['cmd.js'].concat(args), {
+//     cwd: cwd,
+//     stdio: ['pipe', 'pipe', 'pipe', out],
+//     input: log
+//   })
+//   setTimeout(() => {
+//     t.is(fs.readFileSync(tmp).toString().trim(), expected.trim())
+//     fs.unlinkSync(tmp)
 
-  t.is(fs.readFileSync(tmp).toString().split('\n')[0] + '\n', expected)
-  fs.unlinkSync(tmp)
-
-  t.end()
-})
-
+//     t.end()
+//   }, 500)
+// })

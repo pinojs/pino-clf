@@ -283,4 +283,3 @@ test('filters non-http messages by default', function (t) {
     t.end()
   }, 100)
 })
-
