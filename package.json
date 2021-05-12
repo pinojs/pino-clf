@@ -7,10 +7,10 @@
     "pino-clf": "./cmd.js"
   },
   "scripts": {
-    "test": "standard && tap --timeout=0 test/*.js",
     "cov": "tap --cov test/*.js",
     "cov-ui": "tap --cov --coverage-report=html test/*.js",
-    "ci": "standard && tap --timeout=0  --cov --coverage-report=lcov test/*.js"
+    "test": "standard && tap --timeout=0 test/*.js",
+    "test:ci": "standard && tap \"test/*.js\" --timeout=0 --cov --coverage-report=lcov"
   },
   "author": "David Mark Clements",
   "license": "MIT",
